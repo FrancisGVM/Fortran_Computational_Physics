@@ -32,7 +32,7 @@ program haiku
         end do
     end if
 
-    open(newunit=fileunit, file=trim(filename), position = pos,action='write')   ! legacy Fortran: open(unit = 2213, file=trim(filename))
+    open(newunit=fileunit, file=trim(filename), position = pos, action='write')   ! legacy Fortran: open(unit = 2213, file=trim(filename))
     do
         read(stdin, '(a)') text
         write(fileunit, '(a)') trim(text)
